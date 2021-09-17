@@ -95,7 +95,7 @@ class Login:
 
             try:
 
-                con = pymysql.connect(host='localhost', user='root', password='shivakesh2',
+                con = pymysql.connect(host='ant', user='postgres', password='22195',
 
                                       database='pythongui')
 
@@ -229,7 +229,7 @@ class Login:
 
             try:
 
-                con = pymysql.connect(host="localhost", user="root", password="shivakesh2",
+                con = pymysql.connect(host="ant", user="postgres", password="22195",
 
                                       database="pythongui")
 
