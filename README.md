@@ -3,8 +3,11 @@ CREATE TABLE public.register
     emailid character varying COLLATE pg_catalog."default" NOT NULL,
     id integer NOT NULL DEFAULT nextval('register_id_seq'::regclass),
     password character varying(30) COLLATE pg_catalog."default" NOT NULL,
-    username character varying COLLATE pg_catalog."default" NOT NULL,
-    "confirm password" character varying(30) COLLATE pg_catalog."default" NOT NULL,
+    firsthame character varying COLLATE pg_catalog."default" NOT NULL,
+    lastname character varying COLLATE pg_catalog."default" NOT NULL,
+    age character varying(3) COLLATE pg_catalog, "default" NOT NULL,
+    gender character varying COLLATE pg_catalog, "default" NOT NULL,
+    email character varying(30) COLLATE pg_catalog, "default" NOT NULL,
     CONSTRAINT register_pkey PRIMARY KEY (id)
 )
 
