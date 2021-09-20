@@ -35,6 +35,12 @@ def checar_palpite_correto(palpite, número_aleatório):
         return True
     return False
 
+def checar_derrota(palpite, derrota):
+    if palpite == 4:
+        derrota == True
+        print("Você perdeu todas as tentativas :(")
+        sys.exit() 
+
 
 def novo_jogo_ou_sair():
     jogar_novamente = input("Jogar novamente? ")
