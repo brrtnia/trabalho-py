@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, HttpResponseRedirect
-from myapp.models import Member #models.py
+from .models import Member #models.py
  
 # Create your views here.
 def index(request):
@@ -8,10 +8,10 @@ def index(request):
         member.save()
         return redirect('/')
     else:
-        return render(request, 'index.html')
+        return render(request, 'questionario/index.html')
  
 def login(request):
-    return render(request, 'login.html')
+    return render(request, 'questionario/login.html')
  
 def home(request):
     if request.method == 'POST':
@@ -20,4 +20,4 @@ def home(request):
             return render(request, 'home.html', {'member': member})
         else:
             context = {'msg': 'Invalid username or password'}
-            return render(request, 'login.html', context)
+            return render(request, 'questionario/login.html', context)
