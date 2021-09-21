@@ -1,0 +1,60 @@
+
+body{
+	background-image: url(fundo.jpg);
+}
+
+p{
+	color: black;
+	margin-left: 15px;
+	font-family: "Bradley Hand", cursive;
+}
+
+h2{
+	text-align: center;
+	color: black;
+	margin-bottom: 20px;
+}
+h3{
+	margin-left: 30px;
+	margin-right: 20px;
+	margin-top: 20px;
+	color: black;
+}
+
+.cor{
+	border: 3px solid red;
+	background-color: lightskyblue;
+	color: royalblue;
+}
+
+.color{
+	background-color: lightskyblue;
+	color: royalblue;
+}
+
+
+
+.button{
+	text-decoration: none;
+	padding: 10px 10px;
+	border-radius: 9px;
+	border-color: #bdbdbd00;
+	box-shadow: inset 1px -1px 0 2px rgba(255, 255, 255, 0.25);
+	background: transparent;
+	color: white;
+	font-weight: 600;
+	font-size: 15px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.button:hover{
+	color: white;
+	background: none;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+
+
+
+
+

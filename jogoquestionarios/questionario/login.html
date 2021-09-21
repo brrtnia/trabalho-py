@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block body %}
 <form method="POST" class="post-form" action="/home/">  
+<link rel="stylesheet" type="text/css"  href="estilo.css" />
     {% csrf_token %}
     <div class="col-md-2">
          <a href="/">Signup</a>
@@ -17,7 +18,7 @@
         <center><label class="text-danger">{{ msg }}</label></center>
         <br />
         <div class="form-group">
-            <button class="btn btn-primary form-control"><span class="glyphicon glyphicon-log-in"></span> Login</button>
+            <button class="btn btn-primary form-control"><a href="menu.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></button>
         </div>
     </div>
 </form>
